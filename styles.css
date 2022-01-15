@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  background: var(--main-bg);
+  font-family: "Outfit", sans-serif;
+  overflow: auto;
+}
+
+h1 {
+  color: var(--white);
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 24px;
+}
+
+h1:hover {
+  color: var(--cyan);
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+p {
+  color: var(--soft-blue);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+  margin-top: 18px;
+}
+
+.container {
+  background: var(--card-bg);
+  border-radius: 15px;
+  height: 596px;
+  left: 50%;
+  margin: -298px 0 0 -175px;
+  padding: 24px;
+  position: fixed;
+  top: 50%;
+  width: 350px;
+}
+
+.main-image-box {
+  position: relative;
+}
+
+.main-image {
+  border-radius: 8px;
+  width: 100%;
+}
+
+.cyan-layer {
+  align-items: center;
+  background: rgba(0, 255, 247, 0.5);
+  border-radius: 8px;
+  display: flex;
+  height: 302px;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 200ms ease-in-out;
+  opacity: 0;
+  width: 302px;
+}
+
+.cyan-layer:hover {
+  opacity: 100%;
+}
+
+.information {
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  font-size: 16px;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+
+.ethereum {
+  align-items: center;
+  color: var(--cyan);
+  display: flex;
+  font-weight: 600;
+}
+
+.time {
+  align-items: center;
+  color: var(--soft-blue);
+  display: flex;
+  font-weight: 400;
+}
+
+.ethereum-image {
+  display: block;
+  width: 11px;
+}
+
+.clock-image {
+  display: block;
+  width: 16px;
+}
+
+.ethereum-text,
+.clock-text {
+  margin-left: 7px;
+}
+
+.footer {
+  align-items: center;
+  display: flex;
+  margin-top: 15px;
+}
+
+.avatar-image {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 33px;
+}
+
+.signature {
+  color: var(--soft-blue);
+  margin-left: 16px;
+}
+
+.author {
+  color: white;
+  font-weight: 600;
+}
+
+.author:hover {
+  color: var(--cyan);
+  cursor: pointer;
+  font-weight: 400;
+  transition: all 200ms ease-in-out;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 95%;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
